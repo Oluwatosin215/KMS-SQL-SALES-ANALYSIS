@@ -114,7 +114,7 @@ This project analyzes sales data for **Kultra Mega Stores**, a Nigerian office s
   GROUP BY Ship_Mode
   ORDER BY Avg_Shipping_Cost DESC;
 ```
-
+```
 ## Project Document
 [KMS 2 data.txt](https://github.com/user-attachments/files/21059983/KMS.2.data.txt)
 
