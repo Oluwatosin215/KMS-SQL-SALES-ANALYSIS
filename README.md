@@ -35,8 +35,65 @@ This project analyzes sales data for **Kultra Mega Stores**, a Nigerian office s
 * Microsoft Excel (for formatting results)
 * GitHub (for version control & publishing)
 
+  ### Data Analysis
+  ``` sql
+   SELECT Product_category, SUM(Sales) as Total_Sales
+  FROM KMS_Data
+  Group By Product_Category
+  Order by Total_Sales Desc;
   
+  SELECT Top 3 Region, Sum(Sales)as Total_Sales 
+  FROM KMS_Data
+  Group By Region
+  Order By Total_Sales Desc;
+  
+  SELECT SUM(Sales) AS Appliance_Sales
+  FROM KMS_Data
+  WHERE Product_Sub_Category = 'Appliances'
+  AND Region = 'Ontario';
 
+  SELECT Top 10 Customer_Name, Sum(Sales) as Total_Sales
+  From KMS_Data
+  Group By Customer_Name
+  Order By Total_Sales Asc;
+
+  SELECT Ship_Mode, SUM(Shipping_Cost) AS Total_Shipping_Cost
+  FROM KMS_Data
+  GROUP BY Ship_Mode
+  ORDER BY Total_Shipping_Cost DESC;
+
+  SELECT TOP 5 Customer_Name, SUM(Sales) AS Total_Spent
+  FROM KMS_Data
+  GROUP BY Customer_Name
+  ORDER BY Total_Spent DESC;
+
+  SELECT TOP 1 Customer_Name, SUM(Sales) AS Total_Sales
+  FROM KMS_Data
+  WHERE Customer_Segment = 'Small Business'
+  GROUP BY Customer_Name
+  ORDER BY Total_Sales DESC;
+
+  SELECT TOP 1 Customer_Name, COUNT(Order_ID) AS Total_Orders
+  FROM KMS_Data
+  WHERE Customer_Segment = 'Corporate'
+  GROUP BY Customer_Name
+  ORDER BY Total_Orders DESC;
+
+  SELECT TOP 1 Customer_Name, SUM(Profit) AS Total_Profit
+  FROM KMS_Data
+  WHERE Customer_Segment = 'Consumer'
+  GROUP BY Customer_Name
+  ORDER BY Total_Profit DESC;
+
+  SELECT Ship_Mode, COUNT(*) AS Total_Orders, AVG(Shipping_Cost) AS Avg_Shipping_Cost
+  FROM KMS_Data
+  WHERE Order_Priority = 'High'  
+  GROUP BY Ship_Mode
+  ORDER BY Avg_Shipping_Cost DESC;
+
+
+
+```
 
 
 [KMS 2 data.txt](https://github.com/user-attachments/files/21059983/KMS.2.data.txt)
