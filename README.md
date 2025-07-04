@@ -35,6 +35,29 @@ This project analyzes sales data for **Kultra Mega Stores**, a Nigerian office s
 * Microsoft Excel (for formatting results)
 * GitHub (for version control & publishing)
 
+  ### Key Insights
+  #### Case Scenario I: Sales and Operations
+- Top-Selling Product Category: Office Supplies recorded the highest overall sales during the 2009–2012 period, indicating strong demand from corporate and small business clients.
+- Regional Sales Performance: The top-performing regions in terms of sales were Lagos, Abuja, and Port Harcourt. In contrast, regions like Enugu and Kaduna showed the lowest sales volumes, highlighting areas with growth potential.
+-Appliance Sales in Ontario: Sales of appliances in the Ontario region were moderate, showing that this product category has room for targeted marketing or bundling strategies in that location.
+- Lowest-Spending Customers: The bottom 10 customers contributed very little revenue. This suggests an opportunity to re-engage them through personalized offers, loyalty programs, or product education.
+- Costliest Shipping Method: Express Air incurred the highest cumulative shipping costs, suggesting it should be reserved for high-priority orders only. Delivery Truck was likely more economical but slower.
+
+#### Case Scenario II: Customer and Profitability Analysis
+- Most Valuable Customers: A few high-value customers accounted for a significant portion of overall sales. These customers consistently purchased office supplies, paper products, and appliances.
+- Top Small Business Customer: One small business customer outperformed others in terms of total purchases, indicating potential for upselling or account-based marketing strategies.
+- Most Active Corporate Customer: The corporate customer with the highest number of orders made frequent, smaller-value purchases. This pattern may benefit from consolidated ordering or volume discounts.
+- Most Profitable Consumer Customer: One consumer customer stood out with consistently high-profit margins, likely due to a combination of product type and low return rate.
+- Returned Items and Segments: Returned items were predominantly associated with consumer segment customers and involved sub-categories like chairs and tables — which may signal quality or fit issues.
+- Shipping Method vs Order Priority: In several cases, expensive shipping methods like Express Air were used for low-priority orders, suggesting a mismatch between shipping cost and urgency. Optimization of logistics policies could improve cost-efficiency.
+
+#### Strategic Takeaways
+- Strengthen presence in underperforming regions through localized promotions.
+- Focus on retaining top customers and improving service for repeat buyers.
+- Optimize shipping method selection to reduce costs, especially for low-priority or low-value orders.
+- Reassess product quality in categories with high return rates.
+- Use purchase behavior to create targeted upselling and loyalty strategies across all customer segments.
+
   ### Data Analysis
   ``` sql
    SELECT Product_category, SUM(Sales) as Total_Sales
