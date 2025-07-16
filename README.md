@@ -64,6 +64,10 @@ This project analyzes sales data for **Kultra Mega Stores**, a Nigerian office s
 - Reassess product quality in categories with high return rates.
 - Use purchase behavior to create targeted upselling and loyalty strategies across all customer segments.
 
+ ##### 11. Did the company spend appropriately the shipping cost based on the order priority
+ No based on the analysis we did in number 10 , the analysis shows that the major shipping method that has max total no of orders with high priority is Regular Air
+ but the avg shipping cost is low compared to Delivery truck. this show that the company did not spend appropriately the shipping cost based on priority rather based on what is economical.
+
   ### Data Analysis
   ``` sql
    SELECT Product_category, SUM(Sales) as Total_Sales
