@@ -1,3 +1,9 @@
+
+![JD-Mall](https://github.com/user-attachments/assets/44e6d990-9902-4102-89d4-d41358b57d87)
+
+
+
+
 # KMS-SQL-SALES-ANALYSIS
 This project analyzes sales data for **Kultra Mega Stores**, a Nigerian office supply and furniture company. Using **SQL Server**, I examined sales performance, customer segments, shipping methods, and regional trends to support business decisions.
 ## Dataset Overview
